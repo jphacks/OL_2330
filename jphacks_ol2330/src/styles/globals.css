@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 色を変数で置いておきたい */
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,11 +19,40 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  text-align: center;
+  background-color: #FDE4AD;
+  color: #514E4B;
+  /* color:#211715; */
+}
+
+header {
+  text-align: left;
+  height: 100px;
+  background-color: #E57E47;
+  font-size: 30px;
+  color:#211715;
+}
+
+.btn_con {
+  margin-top: 50px;
+}
+
+.con {
+  margin-top:250px;
+}
+
+.btn {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color:#F6E16D;
+  /* text-shadow: 1px 1px 1px #000; */
+  border-radius: 10px;
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  background-color: #514E4B;
 }

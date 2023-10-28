@@ -1,33 +1,42 @@
-import React from 'react'; // Reactもインポートする必要があります
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function getRandomElement(list: number[]): number {
+function getRandomElement(list) {
   const randomIndex = Math.floor(Math.random() * list.length);
   return list[randomIndex];
 }
 
-function IndexPage(){
-  const myList: number[] = Array.from({ length: 100 }, (_, index) => index + 1);
-  const [randomNumber, setRandomNumber] = useState<number | null>(null);
-
-  // const handleRandomButtonClick = () => {
-  //   const randomElement = getRandomElement(myList);
-  //   setRandomNumber(randomElement);
-  // };
+function IndexPage() {
+  const myList = Array.from({ length: 99 }, (_, index) => index + 1);
+  const [randomNumber, setRandomNumber] = useState(null);
+  const [Value, setValue] = useState(null);
 
   useEffect(() => {
     const randomElement = getRandomElement(myList);
     setRandomNumber(randomElement);
+
+    let newValue = null;
+
+    if (randomElement !== null) {
+      if (randomElement < 10) {
+        newValue = `0${randomElement}0`;
+      } else {
+        newValue = `${randomElement}0`;
+      }
+      console.log(newValue);
+    }
+
+    setValue(newValue);
   }, []);
 
   return (
     <div>
-      {/* <button onClick={handleRandomButtonClick}>ランダム表示</button> */}
-      {randomNumber !== null && (
-        <p> {randomNumber}</p>
+      {Value !== null ? (
+        <p>{Value}</p>
+      ) : (
+        <p>1</p>
       )}
     </div>
   );
-};
+}
 
 export default IndexPage;

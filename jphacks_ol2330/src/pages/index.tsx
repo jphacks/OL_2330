@@ -8,7 +8,7 @@ export default function Home() {
       </header>
       <div class="content">図書館の分類からランダムに本のジャンルをお勧めします。</div>
       <div class="btn_con">
-        <button class="random_btn" type="button">えらぶ</button>
+        <a class="random_btn" href="result" role="button">えらぶ</a>
       </div>
     </main>
   )

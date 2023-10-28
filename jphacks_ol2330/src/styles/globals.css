@@ -40,15 +40,19 @@ header {
   color:#211715;
 }
 
+header h1 {
+  margin-left: 30px;
+}
+
 .btn_con {
   margin-top: 50px;
 }
 
-.con {
+.content {
   margin-top:250px;
 }
 
-.btn {
+.random_btn {
   border: 0;
   line-height: 2.5;
   padding: 0 20px;

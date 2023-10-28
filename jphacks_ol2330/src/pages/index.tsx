@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { Result } from "./result";
 
 export default function Home() {
   return (

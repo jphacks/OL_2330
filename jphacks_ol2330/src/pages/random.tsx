@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Image from "next/image";
+import nekored from 'src/pages/images/nekored.png';
 
 function getRandomElement(list) {
   const randomIndex = Math.floor(Math.random() * list.length);
@@ -31,7 +33,10 @@ function IndexPage() {
   return (
     <div>
       {Value !== null ? (
-        <p>{Value}</p>
+        <p>お勧めは {Value} 番だよ！
+        <div className="neko">
+      <Image  src={nekored} width="300" height="300" alt='logo'/>
+      </div></p>
       ) : (
         <p>1</p>
       )}

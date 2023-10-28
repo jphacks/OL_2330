@@ -5,12 +5,16 @@ function getRandomElement(list) {
   return list[randomIndex];
 }
 
+// ランダムで2桁の数字を表示
 function IndexPage() {
   const myList = Array.from({ length: 99 }, (_, index) => index + 1);
+  // ランダムな数字
   const [randomNumber, setRandomNumber] = useState(null);
+  // 2桁表示に直したもの
   const [Value, setValue] = useState(null);
 
   useEffect(() => {
+    (async () => {
     const randomElement = getRandomElement(myList);
     setRandomNumber(randomElement);
 
@@ -24,10 +28,10 @@ function IndexPage() {
       }
       console.log(newValue);
     }
-
     setValue(newValue);
+  })();
   }, []);
-
+  console.log(Value);
   return (
     <div>
       {Value !== null ? (
@@ -39,4 +43,5 @@ function IndexPage() {
   );
 }
 
+// export { Value };
 export default IndexPage;

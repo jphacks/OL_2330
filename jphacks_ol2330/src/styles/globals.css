@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 /* 色を変数で置いておきたい */
-/* 言霊 #FCD58C;
-$岩が隠れ: #211715;
-$タケノコ: #FDE4AD;
-$ニンジン: #E57E47;
-$トンネル: #514E4B; 
-このフォルダの形式を.scssにしないと、変数が置けない*/
-
+:root{
+  --dark_beige: #FCD58C;
+  --black: #211715;
+  --beige: #FDE4AD;
+  --orange: #E57E47;
+  --grey: #514E4B;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -27,7 +27,7 @@ $トンネル: #514E4B;
 
 body {
   text-align: center;
-  background-color: #FDE4AD;
+  background-color: var(--beige);
   color: #514E4B;
   /* color:#211715; */
 }
@@ -35,7 +35,7 @@ body {
 header {
   text-align: left;
   height: 100px;
-  background-color: #E57E47;
+  background-color: var(--orange);
   font-size: 30px;
   color:#211715;
 }
@@ -65,5 +65,5 @@ header h1 {
   box-shadow:
     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  background-color: #514E4B;
+  background-color: var(--grey);
 }

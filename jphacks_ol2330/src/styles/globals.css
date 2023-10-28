@@ -32,16 +32,33 @@ body {
   /* color:#211715; */
 }
 
+.header_component {
+  display: flex;
+  justify-content: space-between;
+}
+
 header {
   text-align: left;
   height: 100px;
+  line-height: 100px;
   background-color: var(--orange);
   font-size: 30px;
   color:#211715;
 }
 
-header h1 {
+header a {
   margin-left: 30px;
+  display: inline-block;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+.main_nav {
+  text-align: right;
+  margin-right: 30px;
 }
 
 .btn_con {

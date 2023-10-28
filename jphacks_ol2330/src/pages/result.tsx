@@ -4,10 +4,7 @@ export default function Result() {
         <header>
           <h1>ほんびより</h1>
         </header>
-        <div class="content">図書館の分類からランダムに本のジャンルをお勧めします。</div>
-        <div class="btn_con">
-          <button class="random_btn" type="button">えらぶ</button>
-        </div>
+        <div class="content">お勧め</div>
       </main>
     )
   }

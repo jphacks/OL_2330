@@ -27,9 +27,24 @@
 
 body {
   text-align: center;
-  background-color: var(--beige);
+  /* background-color: var(--beige); */
   color: #514E4B;
   /* color:#211715; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffe9a7;
+  /* opacity: 0.4; */
+  z-index: -1;
+  background-image:  repeating-linear-gradient(45deg, var(--dark_beige) 25%, transparent 25%, transparent 75%, var(--dark_beige) 75%, var(--dark_beige)), repeating-linear-gradient(45deg, var(--dark_beige) 25%, #ffe9a7 25%, #ffe9a7 75%, var(--dark_beige) 75%, var(--dark_beige));
+  background-position: 0 0, 20px 20px;
+  background-size: 40px 40px;
+}
+
+.main{
+  display: flex;
 }
 
 .header_component {
@@ -39,9 +54,9 @@ body {
 
 header {
   text-align: left;
-  height: 100px;
+  height: 250px;
   line-height: 100px;
-  background-color: var(--orange);
+  background-color: rgba(255, 255, 255, 0);
   font-size: 30px;
   color:#211715;
 }
@@ -65,8 +80,35 @@ header ul {
   margin-top: 50px;
 }
 
+.space{
+ margin: auto; 
+}
+
+.box{
+  margin: auto;
+  height: 450px;
+  width: 500px;
+  position: relative;
+  background: var(--orange);
+  box-shadow: 0px 0px 0px 10px var(--orange);
+  border: dashed 2px white;
+  
+}
+
 .content {
-  margin-top:250px;
+  margin-top:30px;
+  color: #211715;
+  font-weight: 500;
+}
+
+.neko {
+  /* background-color: red; */
+  /* 水平・垂直方向の中央揃え */
+  position: absolute;
+  margin: 0% 0 0 20%;
+  /* top: 25%;
+  left: 45%; */
+  /* margin: ; 完全に中央に配置するため、上・左の margin を負の数に設定 */
 }
 
 .random_btn {
@@ -81,4 +123,5 @@ header ul {
   background-color: #514E4B;
   display: inline-block;
   text-decoration: none;
+  margin-top:250px;
 } 

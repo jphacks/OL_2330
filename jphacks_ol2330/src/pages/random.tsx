@@ -30,15 +30,12 @@ function IndexPage() {
     }
 
     setValue(newValue);
-    // setNDC(NDC[Value]);
-    // console.log(ndc);
-    console.log(NDC[newValue]);
   }, []);
 
   return (
     <div>
       {Value !== null ? (
-        <p>お勧めは {Value} 番<br></br>{ NDC[Value] } だよ！
+        <p>おすすめは {Value} 番<br></br>{ NDC[Value] } だよ！
         <div className="neko">
       <Image  src={nekored} width="300" height="300" alt='logo'/>
       </div></p>

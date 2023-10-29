@@ -1,4 +1,5 @@
 import Header from './components/header.tsx';
+import Footer from './components/footer.tsx';
 
 export default function Thispage() {
     return (
@@ -31,6 +32,7 @@ export default function Thispage() {
       </div>
       </div>
       </div>
+      <Footer/>
       </main>
     )
   }

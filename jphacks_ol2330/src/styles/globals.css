@@ -59,11 +59,12 @@ header {
   background-color: rgba(255, 255, 255, 0);
   font-size: 30px;
   color:#211715;
+  
 }
 
 header b{
   position: relative;
- margin: 4em auto 3em auto;
+ margin: 40px auto auto 10px;
  padding: 0px 20px;
  width: 80%; /* ボックス幅 */
  background: #fdf5e6; /* ボックス背景色 */
@@ -81,7 +82,7 @@ header b::after {
  width: 60px;
  position: absolute;
  content:'';
- top: -30px;
+ top: -20px;
  z-index: -10;
 }
 
@@ -110,10 +111,12 @@ header b::after {
 }
 
 header c {
-  padding: 0.5em;/*文字周りの余白*/
+  padding: 0.5em 0.1em 0.5em 0.9em;/*文字周りの余白*/
   color: #494949;/*文字色*/
   background: #fffaf4;/*背景色*/
   border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+  border-bottom: solid 5px #ffaf58;
+
 }
 
 header d {
@@ -121,6 +124,8 @@ header d {
   color: #494949;/*文字色*/
   background: #fffaf4;/*背景色*/
   border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+  border-bottom: solid 5px #ffaf58;
+
 }
 
 header a {
@@ -240,3 +245,27 @@ h1{
 .this{
   text-align: center;
 }
+
+footer {
+  width: 100%;
+  height: 80px; 
+  text-align: center;
+  /* padding: 50px 0; */
+  background-color: #bdb76b;
+  position: fixed;
+  bottom: 0;
+  border-top: solid;
+  /* line-height: 10px; */
+}
+
+.footer_component{
+  text-align: center;
+  margin: auto;
+}
+
+p{
+  font-size: 20px;
+  margin: auto auto 0px auto;
+  line-height: 80px;
+}
+

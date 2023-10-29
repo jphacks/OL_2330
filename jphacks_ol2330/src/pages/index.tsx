@@ -1,5 +1,6 @@
 import { Result } from "./result";
 import Header from './components/header.tsx';
+import Footer from './components/footer.tsx';
 import Image from "next/image";
 import nekoblue from 'src/pages/images/nekoblue.png';
 
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
       </div>
       </div>
+      <Footer />
     </main>
   )
 }

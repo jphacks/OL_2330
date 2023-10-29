@@ -1,4 +1,5 @@
 import Header from './components/header.tsx';
+import Footer from './components/footer.tsx';
 import React from 'react';
 import IndexPage from './random';
 
@@ -13,6 +14,7 @@ export default function Result() {
       <div class="content"><MyIndexPage /></div>
       </div>
       </div>
+      <Footer/>
     </main>
   )
 }

@@ -2,6 +2,7 @@
 
 [![IMAGE ALT TEXT HERE](https://storage.cloud.google.com/ol_2330_share/localhost_3000%20-%20Google%20Chrome%202023-10-29%2012-26-46.mp4)](https://storage.cloud.google.com/ol_2330_share/localhost_3000%20-%20Google%20Chrome%202023-10-29%2012-26-46.mp4)
 
+https://storage.cloud.google.com/ol_2330_share/localhost_3000%20-%20Google%20Chrome%202023-10-29%2012-26-46.mp4
 ## 製品概要
 図書館の日本十進分類法をランダムで表示します。
 ### 背景(製品開発のきっかけ、課題等）

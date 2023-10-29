@@ -25,7 +25,7 @@ https://storage.cloud.google.com/ol_2330_share/localhost_3000%20-%20Google%20Chr
 　(国立国会図書館のAPIから本を抽出し、その本のうちAmazonのレビューで星が一定数以上のものを表示する)
 ・ジャンル内で検索を行えるようにする
 ### 注力したこと（こだわり等）
-* 
+* エラーによって完成しなかったのですが、国立国会図書館のAPIを頑張りました(ac3dbdaf4275dcf4ac60c71d08ff8111f994fc13)
 * 
 
 ## 開発技術

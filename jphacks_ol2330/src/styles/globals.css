@@ -61,8 +61,79 @@ header {
   color:#211715;
 }
 
+header b{
+  position: relative;
+ margin: 4em auto 3em auto;
+ padding: 0px 20px;
+ width: 80%; /* ボックス幅 */
+ background: #fdf5e6; /* ボックス背景色 */
+ color: #333333; /* 文字色 */
+ text-align: center; /* テキスト中央（不要なら行を削除） */
+ border: 5px solid #F3983B; /* ボックス枠線(太さ・線種・色) */
+ border-radius: 50px;
+ box-shadow: 1px 1px 3px #acacac; /* ボックス影（不要なら行を削除） */
+ z-index: auto;
+}
+
+header b::before, 
+header b::after {
+ height: 60px;
+ width: 60px;
+ position: absolute;
+ content:'';
+ top: -30px;
+ z-index: -10;
+}
+
+header b::before {
+ left: 20%;
+ background: #555555; /* 左耳背景色 */
+ border: 5px solid #F3983B; /* 左耳枠線(太さ・線種・色) */
+ border-radius: 10px 50px 100px 50px;
+ transform: rotate( 45deg );
+ box-shadow: 1px -1px 3px #acacac; /* 耳の影（不要なら行を削除） */
+}
+
+header b::after {
+ right: 20%;
+ background: #B8824D; /* 右耳背景色 */
+ border: 5px solid #F3983B; /* 右耳枠線(太さ・線種・色) */
+ border-radius: 50px 10px 50px 100px;
+ transform: rotate( -45deg );
+ box-shadow: 1px 1px 3px #acacac; /* 耳の影（不要なら行を削除） */
+}
+
+.wrap{
+ background-color: transparent;
+ position: relative;
+ z-index: 0;
+}
+
+header c {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+header d {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
 header a {
-  margin-left: 30px;
+  margin: auto;
+  display: inline-block;
+}
+
+header li{
+  margin: -20px 0 0 0;
+}
+
+.about {
+  margin: auto 30px auto auto;
   display: inline-block;
 }
 
@@ -73,7 +144,6 @@ header ul {
 
 .main_nav {
   text-align: right;
-  margin-right: 30px;
 }
 
 .btn_con {
@@ -91,8 +161,27 @@ header ul {
   position: relative;
   background: var(--orange);
   box-shadow: 0px 0px 0px 10px var(--orange);
-  border: dashed 2px white;
-  
+  border: dashed 2px white; 
+}
+
+.box_about{
+  margin: auto;
+  height: 450px;
+  width: 800px;
+  position: relative;
+  background: tan;
+  box-shadow: 0px 0px 0px 10px tan;
+  border: dashed 2px white; 
+}
+
+.box_class{
+  margin: auto;
+  height: 450px;
+  width: 800px;
+  position: relative;
+  background: tan;
+  box-shadow: 0px 0px 0px 10px tan;
+  border: dashed 2px white; 
 }
 
 .content {
@@ -125,3 +214,10 @@ header ul {
   text-decoration: none;
   margin-top:250px;
 } 
+
+h1{
+  margin-top:20px;
+  color: #211715;
+  font-weight: 500;
+  font-size: 2cap;
+}

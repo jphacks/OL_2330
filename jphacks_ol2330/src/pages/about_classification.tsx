@@ -1,4 +1,5 @@
 import Header from './components/header.tsx';
+import Footer from './components/footer.tsx';
 
 export default function Classification() {
     return (
@@ -29,6 +30,7 @@ export default function Classification() {
       </div>
       </div>
       </div>
+      <Footer />
       </main>
     )
   }

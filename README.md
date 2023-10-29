@@ -23,6 +23,7 @@ https://storage.cloud.google.com/ol_2330_share/localhost_3000%20-%20Google%20Chr
 ### 今後の展望
 ・それぞれのジャンルによって、おすすめの本を表示する
 　(国立国会図書館のAPIから本を抽出し、その本のうちAmazonのレビューで星が一定数以上のものを表示する)
+ <img width="1003" alt="スクリーンショット 2023-10-29 21 28 05" src="https://github.com/jphacks/OL_2330/assets/103619407/b7781777-26cf-4ff7-a5a6-be8823f4ce3c">
 ・ジャンル内で検索を行えるようにする
 ・TypeScriptの型宣言
 ### 注力したこと（こだわり等）

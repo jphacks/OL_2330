@@ -30,11 +30,11 @@ body {
   /* background-color: var(--beige); */
   color: #514E4B;
   /* color:#211715; */
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: #ffe9a7;
   /* opacity: 0.4; */
   z-index: -1;
@@ -156,12 +156,13 @@ header ul {
 }
 
 .space{
- margin: auto; 
+ margin: auto;
+ height: 1000px;
 }
 
 .box{
   margin: auto;
-  height: 450px;
+  height: 500px;
   width: 500px;
   position: relative;
   background: var(--orange);
@@ -171,7 +172,8 @@ header ul {
 
 .box_about{
   margin: auto;
-  height: 450px;
+  margin-bottom: 200px;
+  height: 750px;
   width: 800px;
   position: relative;
   background: tan;
@@ -181,7 +183,8 @@ header ul {
 
 .box_class{
   margin: auto;
-  height: 450px;
+  margin-bottom: 200px;
+  height: 600px;
   width: 800px;
   position: relative;
   background: tan;
@@ -191,8 +194,10 @@ header ul {
 
 .content {
   margin-top:30px;
-  color: #211715;
-  font-weight: 500;
+  /* color: #211715; */
+  color: white;
+  font-weight: 550;
+  font-size: 15px;
 }
 
 .neko {
@@ -239,7 +244,7 @@ h1{
 
 .line{
   text-align: left;
-  margin:auto 10px auto 10px;
+  margin:auto 30px auto 30px;
 }
 
 .this{
